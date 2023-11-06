@@ -28,14 +28,14 @@ ul {
   list-style: none;
 }
 
-li {
+header li {
   float: left;
   font-size: 1.25rem;
   font-family: 'Karla';
   font-weight: 500;
 }
 
-a {
+header a {
   text-decoration: none;
   color: #333333;
   margin-left: 2.5rem;
@@ -68,7 +68,7 @@ main {
   margin-top: 2rem;
 }
 
-section {
+main section {
   width: 50%;
   border-right: 2px solid #EDEFEE;
 }
@@ -83,15 +83,15 @@ h1 {
 section img {
   width: 85%;
   border-radius: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 50%;
-  background-color: aqua;
 }
 
 input[type=date] {
@@ -121,37 +121,138 @@ select {
   color: #495E57;
 }
 
-label {
+.date, .time, legend {
   font-family: 'Karla';
   font-size: 1.25rem;
   font-weight: 700;
+  text-transform: uppercase;
   align-self: flex-start;
   margin-left: 12.5%;
+  margin-bottom: 1rem;
 }
 
-group {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 20px;
-  column-gap: 20px;
-  justify-content: flex-start;
-  align-items: center;
+legend {
+  width: auto;
+  margin-left: 0px;
+}
+
+fieldset {
+  appearance: none;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
   width: 75%;
-  background-color: aquamarine;
+  gap: 3rem 4rem;
+  border: none;
 }
 
 input[type=radio] {
-  appearance: none;
+  display: none;
 }
 
-group label {
+fieldset label {
   display: flex;
-  flex-wrap: wrap;
-  font-size: 1.5rem;
-  font-weight: 500;
-  background-color: blueviolet;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   justify-content: center;
-  padding: 1em;
-  width: 30px;
+  align-items: center;
+  font-family: 'Karla';
+  font-size: 2rem;
+  font-weight: 500;
   border-radius: 50%;
+  color: #495E57;
 }
+
+.line {
+  width: 75%;
+  border-bottom: 2px solid #EDEFEE;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#bookTable {
+  margin-top: 3rem;
+}
+
+input[type=radio]:hover+label {
+  background-color: #EDEFEE;
+}
+
+input[type=radio]:checked+label {
+  background-color: #495E57;
+  box-shadow: 0rem 0.25rem 0.25rem hsla(160, 13%, 33%, 20%);
+  color: white;
+}
+
+ select:enabled {
+  background-color: #495E57;
+  box-shadow: 0rem 0.25rem 0.25rem hsla(0, 0%, 56%, 25%);
+  color: #EDEFEE;
+}
+
+option {
+  text-align: center;
+}
+
+input[type=date]::placeholder {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #495E57;
+  color: white;
+}
+
+h6 {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-family: 'Karla';
+  font-weight: 700;
+}
+
+footer li {
+  font-size: 1.125rem;
+  font-family: 'Karla';
+  font-weight: 500;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footerLogo {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+  width: 5rem;
+  align-self: center;
+}
+
+footer section {
+  margin: 3rem;
+}
+/*group label:nth-child(1) {
+  background-color: chartreuse;
+  justify-self: start;
+}
+
+group label:nth-child(5) {
+  background-color: chartreuse;
+  justify-self: end;
+}
+
+group label:nth-child(7) {
+  background-color: chartreuse;
+  justify-self: start;
+}
+
+group label:nth-child(11) {
+  background-color: chartreuse;
+  justify-self: end;
+}*/

@@ -7,7 +7,6 @@ function Nav () {
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Reservations</a></li>
                 <li><a href="#">Login</a></li>
-                
             </ul>
             <a href="https://www.youtube.com"><button>Order Online</button></a>
         </nav>

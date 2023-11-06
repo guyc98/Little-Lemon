@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
+
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  width: 100vw;
+  height: 7rem;
+}
+nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 7%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  
+  list-style: none;
+}
+
+li {
+  float: left;
+  font-size: 1.25rem;
+  font-family: 'Karla';
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+  margin-left: 2.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  float: left;
+  height: 100%;
+  width: 11.5rem;
+  margin-left: 7%;
+}
+
+button {
+  font-size: 1.25rem;
+  padding: 1rem 3.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #F4CE14;
+  box-shadow: 0rem 0.25rem 0.25rem hsla(50, 91%, 52%, 20%);
+  font-family: 'Karla';
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 2rem;
+}
+
+section {
+  width: 50%;
+  border-right: 2px solid #EDEFEE;
+}
+
+h1 {
+  font-family: 'Markazi Text';
+  font-weight: 500;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+section img {
+  width: 85%;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
+  background-color: aqua;
+}
+
+input[type=date] {
+  width: 75%;
+  height: 3.75rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #EDEFEE;
+  box-shadow: 0rem 0.25rem 0.25rem hsla(0, 0%, 56%, 25%);
+  font-family: 'Karla';
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #495E57;
+}
+
+select {
+  appearance: none;
+  width: 75%;
+  height: 3.75rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #EDEFEE;
+  box-shadow: 0rem 0.25rem 0.25rem hsla(0, 0%, 56%, 25%);
+  font-family: 'Karla';
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #495E57;
+}
+
+label {
+  font-family: 'Karla';
+  font-size: 1.25rem;
+  font-weight: 700;
+  align-self: flex-start;
+  margin-left: 12.5%;
+}
+
+group {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 75%;
+  background-color: aquamarine;
+}
+
+input[type=radio] {
+  appearance: none;
+}
+
+group label {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: blueviolet;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 1em;
+  width: 30px;
+  border-radius: 50%;
 }

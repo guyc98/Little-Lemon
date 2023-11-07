@@ -8,7 +8,8 @@ function Nav () {
                 <li><a href="#">Reservations</a></li>
                 <li><a href="#">Login</a></li>
             </ul>
-            <a href="https://www.youtube.com"><button>Order Online</button></a>
+            <button className="order_online">Order Online</button>
+            <img src="Basket.svg" className="basket_icon"/>
         </nav>
     )
 }

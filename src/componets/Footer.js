@@ -2,8 +2,8 @@ import FooterNav from "./FooterNav";
 
 function Footer () {
     return (
-        <footer>
-            <img src="Asset 9@4x.png" className="footerLogo"/>
+        <footer className="container">
+            <img src="Asset 9@4x.png" className="footer_logo"/>
             <FooterNav />
         </footer>
     )

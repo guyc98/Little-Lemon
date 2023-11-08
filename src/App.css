@@ -90,6 +90,7 @@ button {
   border-radius: 1rem;
   background-color: #F4CE14;
   box-shadow: 0em 0.25em 0.25em hsla(50, 91%, 52%, 20%);
+  cursor: pointer;
 }
 
 #book_table {

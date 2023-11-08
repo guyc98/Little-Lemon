@@ -1,4 +1,13 @@
+import CustomerInfo from "./CustomerInfo";
+
 function Main () {
+    function handleClick (event) {
+        event.preventDefault()
+        return (
+            <CustomerInfo />
+        )
+    }
+
     return (
         <main className="container">
             <section>
@@ -47,7 +56,7 @@ function Main () {
                     </fieldset>
                 </section>
 
-                <a><button id="book_table">Book Table</button></a>
+                <a><button onClick={handleClick} id="book_table">Book Table</button></a>
             </form>
       </main>
     )

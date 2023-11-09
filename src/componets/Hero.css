@@ -1,11 +1,15 @@
 .hero_section {
+    display: flex;
+    justify-content: space-between;
     background-color: #495E57;
     width: 100%;
+    height: calc(60vh - 1rem);
 }
 
 .hero_section h1 {
     color: #F4CE14;
     margin: 0px;
+    margin-top: 0.75em;
 }
 
 .hero_section h2 {
@@ -19,10 +23,95 @@
     font-family: 'Karla';
     font-weight: 500;
     font-size: 1.125rem;
-    width: 40ch;
+    width: 35ch;
     color: #ffffff;
 }
 
 .hero_section img {
-    width: 35ch;
+    position: relative;
+    top: 2rem;
+    height: 45ch;
+    border-radius: 1rem;
+    margin-right: 10%;
 }
+
+.hero_section button {
+    margin-top: 3em;
+    margin-bottom: 3rem;
+}
+
+.hero_section div {
+    margin-right: 4rem;
+    margin-left: 10%;
+}
+
+/* 2xl desktop*/
+@media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+/* xl  laptop*/
+@media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+/* 1g  large tablet*/
+@media (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+
+    .hero_section div {
+        margin-left: 4%;
+    }
+
+    .hero_section img {
+        height: 40ch;
+    }
+  }
+  
+/* md medium tablet*/
+@media (max-width: 768px) {
+    .container {
+      max-width: 640px;
+    }
+
+    .hero_section p {
+        width: 25ch;
+    }
+
+    .hero_section div {
+        margin-left: 3%;
+    }
+  }
+  
+/* sm small tablets*/
+@media (max-width: 640px) {
+    .container {
+      max-width: 475px;
+    }
+
+    .hero_section {
+        flex-direction: column;
+        margin-bottom: 20ch;
+    }
+
+    .hero_section img {
+        object-fit: cover;
+        position: static;
+        width: 100%;
+        height: 25ch;
+        border-radius: 0px;
+    }
+  }
+  
+/* xs smartphone*/
+@media (max-width: 475px) {
+    .container {
+      max-width: 100%;
+    }
+  }

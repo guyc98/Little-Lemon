@@ -1,0 +1,106 @@
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_logo {
+    width: 5rem;
+  }
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+footer li {
+    font-size: 1.125rem;
+    font-family: 'Karla';
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+footer section {
+    margin-left: 5%;
+  }
+
+footer h6 {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    font-family: 'Karla';
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+/* 2xl desktop*/
+@media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+/* xl  laptop*/
+@media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+/* 1g  large tablet*/
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+
+    footer li {
+        font-size: 1rem;
+      }
+    
+    footer h6 {
+        font-size: 1rem;
+      }
+  }
+  
+/* md medium tablet*/
+@media (max-width: 768px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+/* sm small tablets*/
+@media (max-width: 640px) {
+    .container {
+      max-width: 475px;
+    }
+
+    footer li {
+        font-size: 0.8rem;
+      }
+    
+    footer h6 {
+        font-size: 0.8rem;
+      }
+    
+    .footer_logo {
+        width: 4rem;
+      }
+  }
+  
+/* xs smartphone*/
+@media (max-width: 475px) {
+    .container {
+      max-width: 100%;
+    }
+
+    footer {
+      flex-direction: column;
+    }
+
+    .footer_logo{
+        margin-bottom: 1rem;
+    }
+    
+    footer h6 {
+        margin-top: 1rem;
+      }
+  }

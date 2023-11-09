@@ -1,4 +1,5 @@
 import FooterNav from "./FooterNav";
+import './Footer.css'
 
 function Footer () {
     return (

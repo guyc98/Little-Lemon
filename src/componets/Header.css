@@ -1,0 +1,111 @@
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.header_logo {
+    margin-right: auto;
+    width: 11.5rem;
+  }
+
+.basket_icon {
+    margin-left: 2.5rem
+  }
+
+.hamburger_menu {
+    width: 0px;
+  }
+
+ul {
+    list-style: none;
+  }
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+  }
+
+nav li {
+    font-size: 1.25rem;
+    font-family: 'Karla';
+    font-weight: 500;
+    margin-left: 2.5rem;
+    float: left;
+  }
+
+/* 2xl desktop*/
+@media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+/* xl  laptop*/
+@media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
+    }
+
+    .header_logo {
+        width: 11rem;
+      }
+      
+    nav li {
+        font-size: 1.125rem;
+      }
+  }
+  
+/* 1g  large tablet*/
+@media (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+
+    header {
+        justify-content: space-between;
+      }
+    
+    nav ul, nav button {
+        display: none;
+      }
+    
+    .hamburger_menu {
+        width: auto;
+      }
+    
+    .header_logo {
+        margin-right: 0px;
+        padding: 0px;
+      }
+    
+    .basket_icon {
+        margin: 0px;
+      }
+  }
+  
+/* md medium tablet*/
+@media (max-width: 768px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+/* sm small tablets*/
+@media (max-width: 640px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+  
+/* xs smartphone*/
+@media (max-width: 475px) {
+    .container {
+      max-width: 100%;
+    }
+  }

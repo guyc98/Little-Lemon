@@ -1,0 +1,28 @@
+.hero_section {
+    background-color: #495E57;
+    width: 100%;
+}
+
+.hero_section h1 {
+    color: #F4CE14;
+    margin: 0px;
+}
+
+.hero_section h2 {
+    font-family: 'Markazi Text';
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.hero_section p {
+    font-family: 'Karla';
+    font-weight: 500;
+    font-size: 1.125rem;
+    width: 40ch;
+    color: #ffffff;
+}
+
+.hero_section img {
+    width: 35ch;
+}

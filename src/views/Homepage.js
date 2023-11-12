@@ -1,4 +1,5 @@
 import About from "../componets/About";
+import BookingForm from "../componets/BookingForm";
 import Hero from "../componets/Hero";
 import Specials from "../componets/Specials";
 import Testimonials from "../componets/Testimonials";

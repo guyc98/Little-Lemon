@@ -44,7 +44,7 @@ button {
   margin-left: 2.5rem;
 }
 
-.date, .time {
+.date, .time, .occasion {
   width: 70%;
   border: none;
   border-radius: 1rem;
@@ -62,7 +62,7 @@ button {
   padding: 2.5%;
 }
 
-.time {
+.time, .occasion {
   width: 75%;
   padding: 2.8% 2.5% ;
   appearance: none;
@@ -106,8 +106,9 @@ input[type=radio]:checked+label {
 }
 
 
+
 /* Labels & Titles/Subheadings */
-.date_label, .time_label {
+.date_label, .time_label, .occasion_label {
   font-family: 'Karla';
   font-size: 1.25rem;
   font-weight: 700;

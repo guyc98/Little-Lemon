@@ -8,7 +8,7 @@ function BookingPage (props) {
                 <img src="restauranfood.jpg" className="body_image"/>
             </section>
             <BookingForm timesList={props.timesList} changeTimes={props.changeTimes}/>
-      </main>
+        </main>
     )
 }
 

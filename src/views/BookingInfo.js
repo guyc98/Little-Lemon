@@ -2,6 +2,17 @@ import Footer from "../componets/Footer";
 import Nav from "../componets/Nav";
 import './BookingInfo.css'
 
+
+
+
+
+// THIS FILE IS NOT BEING USED ANYMORE IN THIS PROJECT
+
+
+
+
+
+
 function BookingInfo () {
     return (
         <main className="container cus_info">

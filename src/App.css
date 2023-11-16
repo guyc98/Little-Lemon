@@ -38,6 +38,7 @@ button {
 
 #book_table {
   margin-top: 3rem;
+  background-color: #bea00e;
 }
 
 .order_online {
@@ -67,6 +68,7 @@ button {
   padding: 2.8% 2.5% ;
   appearance: none;
 }
+
 
 /* Number of Guests Component */
 .num_of_guests {
@@ -105,8 +107,6 @@ input[type=radio]:checked+label {
   color: #ffffff;
 }
 
-
-
 /* Labels & Titles/Subheadings */
 .date_label, .time_label, .occasion_label {
   font-family: 'Karla';
@@ -133,6 +133,18 @@ main h1 {
   margin-bottom: 0.75em;
 }
 
+.error {
+  color: red;
+  font-family: 'Karla';
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  align-self: flex-start;
+  margin-top: 1em;
+  margin-left: 12.5%;
+  margin-bottom: 0.5em;
+}
+
 /* Main Section Layout */
 main section {
   width: 50%;
@@ -150,6 +162,7 @@ form section {
   width: 75%;
   overflow: scroll;
 }
+
 
 
 /* Containers */
@@ -235,11 +248,11 @@ main.homepage {
     font-size: 2.5rem;
   }
 
-  .date, .time {
+  .date, .time, .occasion {
     font-size: 1.25rem;
   }
 
-  .date_label, .time_label, legend {
+  .date_label, .time_label, legend, .occasion_label {
     font-size: 1rem;
   }
 }
@@ -281,13 +294,13 @@ main.homepage {
     padding: 2.5%;
   }
   
-  .time {
+  .time, .occasion{
     width: 90%;
     padding: 2.8% 2.5% ;
     appearance: none;
   }
 
-  .date_label, .time_label {
+  .date_label, .time_label, .occasion_label {
     margin-left: 5%;
   }
 

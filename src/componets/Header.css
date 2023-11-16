@@ -39,6 +39,10 @@ nav li {
     float: left;
   }
 
+nav a:hover {
+  color: #495E57;
+}
+
 /* 2xl desktop*/
 @media (max-width: 1536px) {
     .container {

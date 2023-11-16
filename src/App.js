@@ -8,6 +8,7 @@ import Homepage from './views/Homepage';
 import BookingPage from './views/BookingPage';
 import BookingForm from './componets/BookingForm';
 import { BookingProvider } from './BookingFormContext';
+import ConfirmedBooking from './componets/ConfirmedBooking';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/' element={<Homepage />}/>
         <Route path='/reservations' element={<BookingPage />}/>
         <Route path='/booking' element={<BookingInfo />}/>
+        <Route path='/confirmedbooking' element={<ConfirmedBooking />}/>
       </Routes>
       <Footer />
     </BookingProvider>
